@@ -1,8 +1,9 @@
 {
-  "issuer": "https://raw.githubusercontent.com/soul-less-king/oidc-host-x7k2/main/config.json",
+  "issuer": "https://raw.githubusercontent.com/soul-less-king/oidc-host-x7k2/main",
   "authorization_endpoint": "https://raw.githubusercontent.com/soul-less-king/oidc-host-x7k2/main/auth",
   "token_endpoint": "https://raw.githubusercontent.com/soul-less-king/oidc-host-x7k2/main/token",
   "jwks_uri": "https://raw.githubusercontent.com/soul-less-king/oidc-host-x7k2/main/jwks.json",
+  "userinfo_endpoint": "https://raw.githubusercontent.com/soul-less-king/oidc-host-x7k2/main/userinfo",
   "response_types_supported": [
     "code",
     "token",
@@ -22,5 +23,15 @@
   "token_endpoint_auth_methods_supported": [
     "client_secret_basic",
     "none"
+  ],
+  "claims_supported": [
+    "sub",
+    "iss",
+    "aud",
+    "exp",
+    "iat",
+    "email",
+    "preferred_username",
+    "name"
   ]
 }
